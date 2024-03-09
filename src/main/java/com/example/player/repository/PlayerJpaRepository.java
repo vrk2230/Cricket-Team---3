@@ -1,9 +1,12 @@
-/*
- * You can use the following import statements
- * 
- * import org.springframework.data.jpa.repository.JpaRepository;
- * import org.springframework.stereotype.Repository;
- * 
- */
+package com.example.player.repository;
 
-// Write your code here
+import org.springframework.stereotype.Repository;
+
+import com.example.player.model.Player;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+@Repository
+public interface PlayerJpaRepository extends JpaRepository<Player, Integer> {
+
+}
